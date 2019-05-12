@@ -5,14 +5,14 @@ import datetime
 
 class Weather:
 
-    def __init__(self, location, url):
+    def __init__(self, location, zipcode):
         self.location = location
-        self.url = url
+        self.zipcode = zipcode
         self.soup = None
         self.temps = None
 
     def scrape(self):
-        r = requests.get(self.url)
+        r = requests.get("https://weather.com/weather/tenday/l/" + self.zipcode)
         self.soup = BeautifulSoup(r.content, 'html.parser')
         return self.soup
 
@@ -52,11 +52,3 @@ class Weather:
             x += 1
             y += 2
 
-
-traverse = Weather("Williamsburg, MI",
-                   "https://weather.com/weather/tenday/l/1011eb7ead549e7a528065834339bf6d89bbbfaa6046aad883ce7be11d1f96"
-                   "50")
-
-traverse.scrape()
-traverse.find_ten_day_temps()
-traverse.print_ten_day_temps()
