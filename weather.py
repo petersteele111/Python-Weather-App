@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import datetime
 
 
-class Scraper:
+class Weather:
 
     def __init__(self, location, url):
         self.location = location
@@ -53,7 +53,7 @@ class Scraper:
             y += 2
 
 
-traverse = Scraper("Williamsburg, MI",
+traverse = Weather("Williamsburg, MI",
                    "https://weather.com/weather/tenday/l/1011eb7ead549e7a528065834339bf6d89bbbfaa6046aad883ce7be11d1f96"
                    "50")
 
