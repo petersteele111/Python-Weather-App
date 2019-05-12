@@ -68,3 +68,11 @@ fabric.properties
 /venv/Lib/site-packages/
 /.idea/
 !/.idea/
+/.idea/.idea/vcs.xml
+/.idea/.idea/.idea.iml
+/.idea/.idea/misc.xml
+/.idea/misc.xml
+/.idea/.idea/modules.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/Weather App.iml
