@@ -4,6 +4,7 @@ import datetime
 
 class Scraper:
 
+
     def __init__(self, location):
         self.location = location
 
