@@ -2,49 +2,61 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 
+
 class Scraper:
 
-
-    def __init__(self, location):
+    def __init__(self, location, url):
         self.location = location
+        self.url = url
+        self.soup = None
+        self.temps = None
 
-    def get_tenDayTemps(self):
-        r = requests.get(self.location)
-        soup = BeautifulSoup(r.content, 'html.parser')
-        temps = []
+    def scrape(self):
+        r = requests.get(self.url)
+        self.soup = BeautifulSoup(r.content, 'html.parser')
+        return self.soup
 
-        temp = soup.find_all('td', class_="temp")
-        # Temp is now a Result Object
+    def find_ten_day_temps(self):
+        self.temps = []
+        temp = self.soup.find_all('td', class_="temp")
         for i in temp:
             i.find('span', class_="")
             for x in i:
-                temps.append(x.contents)
+                self.temps.append(x.find('span'))
                 for y in x:
-                    temps.append(y.text)
-        days = []
-        weekdays = ("Monday's", "Tuesday's", "Wednesday's", "Thursday's", "Friday's", "Saturday's", "Sunday's")
+                    self.temps.append(y.text)
+        del self.temps[0::2]
+        return self.temps
 
+    def print_ten_day_temps(self):
+        days = []
+        date = []
+        x = 2
+        y = 4
         z = 0
+        today = datetime.datetime.now()
+        incr_day = datetime.timedelta
+        weekdays = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+
         while z < 11:
-            weekday = ((datetime.datetime.now() + datetime.timedelta(days=z)).weekday())
+            dte = today + incr_day(days=z)
+            date.append(dte.strftime("%b %d"))
+            weekday = ((today + incr_day(days=z)).weekday())
             days.append(weekdays[weekday])
             z += 1
-
-        print("10 Day Weather Forecast")
-        print("Today's weather is " + temps[1] + "/" + temps[3])
-        print("Tomorrow's weather is " + temps[5] + "/" + temps[7])
-        print(days[2] + " weather is " + temps[9] + "/" + temps[11])
-        print(days[3] + " weather is " + temps[13] + "/" + temps[15])
-        print(days[4] + " weather is " + temps[17] + "/" + temps[19])
-        print(days[5] + " weather is " + temps[21] + "/" + temps[23])
-        print(days[6] + " weather is " + temps[25] + "/" + temps[27])
-        print(days[7] + " weather is " + temps[29] + "/" + temps[31])
-        print(days[8] + " weather is " + temps[33] + "/" + temps[35])
-        print(days[9] + " weather is " + temps[37] + "/" + temps[39])
-        print(days[10] + " weather is " + temps[41] + "/" + temps[43])
+        print("10 Day Weather Forecast for " + self.location)
+        print("Today's weather is " + self.temps[0] + "/" + self.temps[1])
+        print("Tomorrow's weather will be " + self.temps[2] + "/" + self.temps[3])
+        while x < 11 and y < 22:
+            print(days[x] + " " + date[x] + ", the weather will be " + self.temps[y] + "/" + self.temps[y+1])
+            x += 1
+            y += 2
 
 
-traverse = Scraper("https://weather.com/weather/tenday/l/1011eb7ead549e7a528065834339bf6d89bbbfaa6046aad883ce7be11d1f9650")
-orlando = Scraper('https://weather.com/weather/tenday/l/bdcad7b003356cef4a2a80034d7f23f4f42464c4341a02051f41860acc458a39')
-traverse.get_tenDayTemps()
-orlando.get_tenDayTemps()
+traverse = Scraper("Williamsburg, MI",
+                   "https://weather.com/weather/tenday/l/1011eb7ead549e7a528065834339bf6d89bbbfaa6046aad883ce7be11d1f96"
+                   "50")
+
+traverse.scrape()
+traverse.find_ten_day_temps()
+traverse.print_ten_day_temps()
