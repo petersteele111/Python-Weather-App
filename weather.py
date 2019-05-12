@@ -46,3 +46,4 @@ class Scraper:
 traverse = Scraper("https://weather.com/weather/tenday/l/1011eb7ead549e7a528065834339bf6d89bbbfaa6046aad883ce7be11d1f9650")
 
 traverse.get_temps()
+traverse.get_temps()
