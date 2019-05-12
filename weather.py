@@ -8,7 +8,7 @@ class Scraper:
     def __init__(self, location):
         self.location = location
 
-    def get_temps(self):
+    def get_tenDayTemps(self):
         r = requests.get(self.location)
         soup = BeautifulSoup(r.content, 'html.parser')
         temps = []
@@ -46,5 +46,5 @@ class Scraper:
 
 traverse = Scraper("https://weather.com/weather/tenday/l/1011eb7ead549e7a528065834339bf6d89bbbfaa6046aad883ce7be11d1f9650")
 orlando = Scraper('https://weather.com/weather/tenday/l/bdcad7b003356cef4a2a80034d7f23f4f42464c4341a02051f41860acc458a39')
-traverse.get_temps()
-orlando.get_temps()
+traverse.get_tenDayTemps()
+orlando.get_tenDayTemps()
