@@ -67,4 +67,4 @@ This may change in the future as I update the program and add more features. I w
 # Conclusion
 Thank you all for checking out my repo and app. This is very much a work in progress and new features and restructuring are done daily. As mentioned above, if you have any questions, comments, or concerns, please don't hesitate to contact me on here and I will be more than happy to read and reply to those messages. 
 
-**This is a work in progress. The source code here is released under the GNUv3 License.**
+**This is a work in progress. The source code here is released under the GNUv3 License. Thank you**
