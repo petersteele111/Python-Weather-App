@@ -18,7 +18,7 @@ class Weather:
         self.soup = BeautifulSoup(r.content, 'html.parser')
         return self.soup
 
-    def find_today_temp(self):
+    def find_todays_temp(self):
         self.todays_temp = []
         today_temp_high = self.soup.find('div', class_='today_nowcard-temp')
         self.todays_temp.append(today_temp_high.text)
@@ -75,7 +75,5 @@ class Weather:
 #
 sault = Weather('Sault Ste. Marie', '49783')
 sault.scrape(0)
-sault.find_today_temp()
+sault.find_todays_temp()
 sault.print_todays_temp()
-# sault.find_ten_day_temps()
-# sault.print_ten_day_temps()
