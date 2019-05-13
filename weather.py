@@ -68,11 +68,6 @@ class Weather:
             y += 2
 
 
-# home = Weather("Williamsburg, MI", "49690")
-# home.scrape(3)
-# home.find_ten_day_temps()
-# home.print_ten_day_temps()
-#
 sault = Weather('Sault Ste. Marie', '49783')
 sault.scrape(0)
 sault.find_todays_temp()
