@@ -3,10 +3,12 @@ This is a hobby project of mine to create a python program that can scrape a wea
 
 My main goals with this project are to create a class that handles the logic and scraping, while a GUI interface that sits on the desktop queries the proper information and displays it for you. Again, nothing unique here, but I am not going off any other projects similar to this, and I am writing this from the ground up to help myself learn and gain more experience with Python. 
 
-Hopefully you all find this project fun and interesting and can make it something even greater! I'm uploading the code under GNUv3 so have at it. If you have any questions or suggestions for a different route I might take then please message me here and I will happily read it.
+Hopefully you all find this project fun and interesting and can make it something even greater! I'm uploading the 
+code under GNUv3 so have at it. If you have any questions or suggestions for a different route I might take then 
+please message me at info@pbsteele.com.
 
 # Installation
-To install this program, it is rather simple. You will need two modules for python and thats it! I use the requests and BeautifulSoup modules to get the html and parse it for the weather data needed. 
+To install this program, it is rather simple. You will need two modules for python and that's it! I use the requests and BeautifulSoup modules to get the html and parse it for the weather data needed. 
 
 **1.)** To install requests simply run the command:
 ```pip install requests```
@@ -65,6 +67,8 @@ So basically I have split this up into several different methods. The reason beh
 This may change in the future as I update the program and add more features. I will reflect these changes here in the README as necessary.
 
 # Conclusion
-Thank you all for checking out my repo and app. This is very much a work in progress and new features and restructuring are done daily. As mentioned above, if you have any questions, comments, or concerns, please don't hesitate to contact me on here and I will be more than happy to read and reply to those messages. 
+Thank you all for checking out my repo and app. This is very much a work in progress and new features and 
+restructuring are done daily. As mentioned above, if you have any questions, comments, or concerns, please don't 
+hesitate to contact me at info@pbsteele.com and I will be more than happy to read and reply to those messages. 
 
 **This is a work in progress. The source code here is released under the GNUv3 License. Thank you**
