@@ -44,7 +44,7 @@ print(sault.todays_sunset())
 print(sault.request_time())
 ```
 **Expected Output**
-```
+````
 Sault Ste Marie, MI                             # Location Name
 39°                                             # Todays High
 36°                                             # Todays Low
