@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
+
 class Weather:
 
     def __init__(self, zipcode):
@@ -38,7 +39,6 @@ class Weather:
         self.todays_temp.append(today_temp_high.text)
         today_temp_low = self.soup.find('span', class_='deg-hilo-nowcard')
         self.todays_temp.append(today_temp_low.next_sibling.next_sibling.next_sibling.text)
-
 
     def locations_name(self):
         return self.location_name
