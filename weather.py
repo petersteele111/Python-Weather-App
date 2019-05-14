@@ -84,23 +84,3 @@ class Weather:
 
     def request_time(self):
         return self.request_times
-
-
-sault = Weather('49690')
-sault.scrape()
-sault.find_todays_weather()
-print(sault.location_name)
-print(sault.todays_high())
-print(sault.todays_low())
-print(sault.todays_feels_like())
-print(sault.todays_wind())
-print(sault.todays_description())
-print(sault.todays_dew_point())
-print(sault.todays_humidity())
-print(sault.todays_pressure())
-print(sault.todays_visibility())
-print(sault.todays_precipitation())
-print(sault.todays_short_description())
-print(sault.todays_sunrise())
-print(sault.todays_sunset())
-print(sault.request_time())
