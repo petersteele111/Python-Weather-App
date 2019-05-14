@@ -44,21 +44,21 @@ print(sault.request_time())
 ```
 **Expected Output**
 ```
-Sault Ste Marie, MI # Location Name
-39° # Todays High
-36° # Todays Low
-39° # Todays Feels Like Temp
-Calm # Todays Wind
-Fair # Todays Desctiption
-31° # Todays Dew Point
-72% # Todays Humidity
-29.93 in # Todays Barometric Pressure
-10.0 mi # Todays Visibility
-0% # Todays Precipitation Chances
+Sault Ste Marie, MI                             # Location Name
+39°                                             # Todays High
+36°                                             # Todays Low
+39°                                             # Todays Feels Like Temp
+Calm                                            # Todays Wind
+Fair                                            # Todays Description
+31°                                             # Todays Dew Point
+72%                                             # Todays Humidity
+29.93 in                                        # Todays Barometric Pressure
+10.0 mi                                         # Todays Visibility
+0%                                              # Todays Precipitation Chances
 Clear skies. Low 36F. Winds light and variable. # Todays Short Description
-6:06 am # Todays Sunrise
-9:01 pm # Todays Sunset
-as of 3:02 am EDT # Time that website was scraped
+6:06 am                                         # Todays Sunrise
+9:01 pm                                         # Todays Sunset
+as of 3:02 am EDT                               # Time that website was scraped
 ```
 So basically I have split this up into several different methods. The reason behind this so far, is that I want as much modularity as possible for now regarding finding the temps, formatting and printing the temps, scraping the site for the temps, etc. 
 This may change in the future as I update the program and add more features. I will reflect these changes here in the README as necessary.
