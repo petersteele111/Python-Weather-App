@@ -21,7 +21,7 @@ To install this program, it is rather simple. You will need two modules for pyth
 # Example's
 Here I will provide and example of how to curently use the program to get weather information. I only have temps included as of now, but will be working on more relevant information as I flesh this app out. 
 
-**Today's current temp and projected low**
+**Today's Weather**
 ```
 sault = Weather('49783')
 sault.scrape()
