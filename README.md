@@ -61,7 +61,9 @@ Clear skies. Low 36F. Winds light and variable. # Todays Short Description
 9:01 pm                                         # Todays Sunset
 as of 3:02 am EDT                               # Time that website was scraped
 ```
-So basically I have split this up into several different methods. The reason behind this so far, is that I want as much modularity as possible for now regarding finding the temps, formatting and printing the temps, scraping the site for the temps, etc. 
+So basically I have split this up into several different methods. The reason behind this so far, is that 
+I want as much modularity as possible for now regarding finding the temps, formatting and printing the temps, 
+scraping the site for the temps, etc. 
 This may change in the future as I update the program and add more features. I will reflect these changes here in the README as necessary.
 
 # Conclusion
