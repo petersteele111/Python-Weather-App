@@ -1,4 +1,4 @@
-# Python Weather App - Peter Steele
+# Python Weather API - Peter Steele
 This is a hobby project of mine to create a python program that can scrape a weather site and output the current weather, 10 day forecasts, etc. I realize I could simply just go to the websites for this information but where is the fun in that? 
 
 My main goals with this project are to create a class that handles the logic and scraping, while a GUI interface that sits on the desktop queries the proper information and displays it for you. Again, nothing unique here, but I am not going off any other projects similar to this, and I am writing this from the ground up to help myself learn and gain more experience with Python. 
