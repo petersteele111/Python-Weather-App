@@ -44,7 +44,7 @@ print(sault.todays_sunset())
 print(sault.request_time())
 ```
 **Expected Output**
-````
+```
 Sault Ste Marie, MI                             # Location Name
 39°                                             # Todays High
 36°                                             # Todays Low
@@ -63,8 +63,7 @@ as of 3:02 am EDT                               # Time that website was scraped
 ```
 So basically I have split this up into several different methods. The reason behind this so far, is that 
 I want as much modularity as possible for now regarding finding the temps, formatting and printing the temps, 
-scraping the site for the temps, etc. 
-This may change in the future as I update the program and add more features. I will reflect these changes here in the README as necessary.
+scraping the site for the temps, etc. This may change in the future as I update the program and add more features. I will reflect these changes here in the README as necessary.
 
 # Conclusion
 Thank you all for checking out my repo and app. This is very much a work in progress and new features and 
