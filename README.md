@@ -19,7 +19,8 @@ To install this program, it is rather simple. You will need two modules for pyth
 **3.)** Lastly, download or clone this repo and use the class in any project you might be working on currently. You can also play around with it and just import the class into a blank python file and create as many objects as you want and run the code to output the desired weather. I will be working on a GUI later on that will simplify this even further. 
 
 # Example's
-Here I will provide and example of how to curently use the program to get weather information. I only have temps included as of now, but will be working on more relevant information as I flesh this app out. 
+Here I will provide and example of how to currently use the program to get weather information. Use this information 
+to build your own weather app! 
 
 **Today's Weather**
 ```
