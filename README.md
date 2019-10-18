@@ -20,7 +20,7 @@ To install this program, it is rather simple. You will need two modules for pyth
 
 # Example's
 Here I will provide and example of how to currently use the program to get weather information. Use this information 
-to build your own weather app! 
+to build your own weather app! You can also run the Weather_API_DEMO.py file to see it in action as well. Simply just change the zipcode for the location you wish to view and run it. You will see the updated information. You may change the Object name if you wish as well. 
 
 **Today's Weather**
 ```
@@ -65,9 +65,11 @@ So basically I have split this up into several different methods. The reason beh
 I want as much modularity as possible for now regarding finding the temps, formatting and printing the temps, 
 scraping the site for the temps, etc. This may change in the future as I update the program and add more features. I will reflect these changes here in the README as necessary.
 
+This API, while not difficult or overly complex, can be incorporated into a multitude of projects. From GUI based weather applications to console based apps. Use it however you like! I have done the dirty work of digging through the HTML and extracting the relevant information. Now it is up to you to utilize this however you see fit! I really hope you enjoy this project, and I will be working on creating more features soon. I want to add extended forecasts, weekend forecasts, and so much more. 
+
 # Conclusion
 Thank you all for checking out my repo and app. This is very much a work in progress and new features and 
-restructuring are done daily. As mentioned above, if you have any questions, comments, or concerns, please don't 
+restructuring are done often. As mentioned above, if you have any questions, comments, or concerns, please don't 
 hesitate to contact me at info@pbsteele.com and I will be more than happy to read and reply to those messages. 
 
 **This is a work in progress. The source code here is released under the GNUv3 License. Thank you**
