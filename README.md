@@ -26,7 +26,7 @@ to build your own weather app!
 ```
 sault = Weather('49783')
 sault.scrape()
-sault.find_todays_weather()
+sault.find_todays_conditions()
 print(sault.location_name)
 print(sault.todays_high())
 print(sault.todays_low())
