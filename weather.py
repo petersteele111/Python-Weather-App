@@ -84,10 +84,3 @@ class Weather:
     def request_time(self):
         self.request_times = self.soup.find('p', class_='today_nowcard-timestamp').text
         return self.request_times
-
-sault = Weather('49690')
-sault.scrape()
-sault.find_todays_conditions()
-print(sault.todays_feels_like())
-print(sault.locations_name())
-print(sault.todays_wind())
