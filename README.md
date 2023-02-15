@@ -1,3 +1,5 @@
+## DOES NOT WORK CURRENTLY - Weather.com stopped allowing web scrapers to get data. Working on a new version with API support and GUI
+
 # Python Weather API - Peter Steele
 This is a hobby project of mine to create a python program that can scrape a weather site and output the current weather, 10 day forecasts, etc. I realize I could simply just go to the websites for this information but where is the fun in that? 
 
